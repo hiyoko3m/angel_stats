@@ -87,7 +87,7 @@ WSGI_APPLICATION = "angel_stats.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "mydatabase",
+        "NAME": "angel_stats",
         "USER": "root",
         "PASSWORD": "pass",
         "HOST": "127.0.0.1",

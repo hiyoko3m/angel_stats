@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 wagtail = "^6.0"
+mysqlclient = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.1.1"
@@ -15,6 +16,17 @@ isort = "^5.13.2"
 flake8 = "^7.0.0"
 mypy = "^1.8.0"
 
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+ extend-exclude = ["migrations"]
+
+[tool.isort]
+profile = "black"
+extend_skip = ["migrations"]
+
+[tool.mypy]
+exclude = ["migrations"]
 
 [build-system]
 requires = ["poetry-core"]

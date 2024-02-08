@@ -13,10 +13,6 @@
 				"editor.codeActionsOnSave": {
 					"source.organizeImports": true
 				},
-				"python.linting.enabled": true,
-				"python.linting.pylintEnabled": false,
-				"python.linting.flake8Enabled": true,
-				"python.linting.lintOnSave": true,
 				"python.linting.mypyEnabled": true,
 				"python.formatting.provider": "black",
 				"python.languageServer": "Pylance",
@@ -26,7 +22,8 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"ms-python.flake8"
 			]
 		}
 	},
