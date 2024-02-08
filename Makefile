@@ -11,3 +11,10 @@ migrate:
 
 run:
 	poetry run python manage.py runserver
+
+format:
+	poetry run black .
+	poetry run isort .
+
+lint:
+	poetry run flake8

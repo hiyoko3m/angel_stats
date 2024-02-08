@@ -9,12 +9,14 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
+				"editor.defaultFormatter": "ms-python.black-formatter",
 				"editor.formatOnSave": true,
 				"editor.codeActionsOnSave": {
 					"source.organizeImports": true
 				},
-				"python.linting.mypyEnabled": true,
-				"python.formatting.provider": "black",
+				"black-formatter.path": ["${workspaceFolder}/.venv/bin/black"],
+				"isort.path": ["${workspaceFolder}/.venv/bin/isort"],
+				"flake8.path": ["${workspaceFolder}/.venv/bin/flake8"],
 				"python.languageServer": "Pylance",
 				"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 				"files.insertFinalNewline": true
@@ -23,6 +25,8 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.isort",
 				"ms-python.flake8"
 			]
 		}
